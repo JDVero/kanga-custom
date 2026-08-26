@@ -74,15 +74,27 @@
     <!-- Contact Form Section -->
     <section class="contact-form">
       <h3>Tell us what you need!</h3>
-      <form>
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <input type="text" placeholder="Company / Organisation">
-        <textarea placeholder="Message" rows="5" required></textarea>
+      <form action="https://formsubmit.co/jasonvero1998@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New contact request - Kanga Custom Products">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" title="Enter a 10-digit phone number" required>
+        <input type="text" name="company" placeholder="Company / Organisation">
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
         <button type="submit">Submit</button>
       </form>
     </section>
+
+    <div class="modal" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title" hidden>
+      <div class="modal-content">
+        <button class="modal-close" type="button" aria-label="Close">&times;</button>
+        <h2 id="quote-modal-title">Quote Sent!</h2>
+        <p>Hang tight. We'll be reaching out to you shortly!</p>
+      </div>
+    </div>
   </main>
 
   <!-- Footer -->
@@ -99,5 +111,6 @@
       <p><span>📍</span> Salt Lake City, UT 84115</p>
     </div>
   </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>

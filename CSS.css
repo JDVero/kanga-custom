@@ -313,6 +313,50 @@ footer .footer-right p {
   cursor: pointer;
 }
 
+.modal[hidden] {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 2000;
+}
+
+.modal-content {
+  position: relative;
+  width: min(100%, 420px);
+  padding: 35px 25px 25px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.modal-content h2 {
+  margin: 0 0 10px;
+}
+
+.modal-content p {
+  margin: 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  padding: 0 5px;
+  border: 0;
+  background: transparent;
+  color: #333;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
 /* Hero Section */
 .hero {
   text-align: center;
