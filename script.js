@@ -1,6 +1,28 @@
-const forms = document.querySelectorAll('form[action*="formsubmit.co"]');
-const modal = document.querySelector('#quote-modal');
-const closeButton = modal?.querySelector('.modal-close');
+async function loadSharedContent() {
+  const sharedContent = [
+    ['[data-include="header"]', 'header.html'],
+    ['[data-include="footer"]', 'footer.html']
+  ];
+
+  await Promise.all(sharedContent.map(async ([selector, file]) => {
+    const placeholder = document.querySelector(selector);
+    if (!placeholder) {
+      return;
+    }
+
+    const response = await fetch(file);
+    if (!response.ok) {
+      throw new Error(`Unable to load ${file}`);
+    }
+
+    placeholder.outerHTML = await response.text();
+  }));
+}
+
+function initializeForms() {
+  const forms = document.querySelectorAll('form[action*="formsubmit.co"]');
+  const modal = document.querySelector('#quote-modal');
+  const closeButton = modal?.querySelector('.modal-close');
 
 function closeModal() {
   if (!modal) {
@@ -10,8 +32,8 @@ function closeModal() {
   modal.hidden = true;
 }
 
-forms.forEach((form) => {
-  form.addEventListener('submit', async (event) => {
+  forms.forEach((form) => {
+    form.addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const submitButton = form.querySelector('button[type="submit"]');
@@ -50,17 +72,22 @@ forms.forEach((form) => {
     } finally {
       submitButton.disabled = false;
     }
+    });
   });
-});
 
-closeButton?.addEventListener('click', closeModal);
-modal?.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    closeModal();
-  }
-});
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    closeModal();
-  }
-});
+  closeButton?.addEventListener('click', closeModal);
+  modal?.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  });
+}
+
+loadSharedContent()
+  .then(initializeForms)
+  .catch((error) => console.error(error));

@@ -7,52 +7,45 @@
   <link rel="stylesheet" href="CSS.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="site-inner">
-      <div class="logo">
-        <img src="/logo/KangaLogo.png" alt="Kanga Logo">
-        <span>Kanga Custom Products</span>
-      </div>
-      <nav>
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="why-choose-us.html">Why Choose Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="request-quote.html" class="quote-btn">Request a Quote</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div data-include="header"></div>
 
   <!-- Main Content -->
   <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <h2>Custom medals, pins, and trophies</h2>
-      <h5>for all sporting events</h5>
-      <div class="hero-buttons">
-        <a href="request-quote.html" class="quote-btn">Request a Quote</a>
-        <a href="products.html" class="product-btn"> View Products</a>
-      </div>
-    </section>
+    <div class="orange-gradient-bg">
+  <!-- Hero Section -->
+      <section class="hero">
+        <h1>Custom medals, pins, and trophies</h1>
+        <h3>for all sporting events</h3>
+        <div class="hero-buttons">
+          <a href="request-quote.html" class="quote-btn">Request a Quote</a>
+          <a href="products.html" class="product-btn"> View Products</a>
+        </div>
+      </section>
 
-    <!-- Our Products Section -->
-    <section class="products">
-      <h3>Our Products</h3>
-      <div class="cards">
-        <div class="card">Medals</div>
-        <div class="card">Pins</div>
-        <div class="card">Trophies</div>
-      </div>
-    </section>
+      <!-- Our Products Section -->
+      <section class="products">
+        <h1>Our Products</h1>
+        <div class="cards">
+          <div class="card1">
+            <img src="products/Bunga%20Run%20Medal.jpg" alt="Custom medal">
+            <span>Medals</span>
+          </div>
+          <div class="card2">
+            <img src="products/Dixie%20Flip%202023.jpg" alt="Custom pin">
+            <span>Pins</span>
+          </div>
+          <div class="card3">
+            <img src="products/trophy.jpg" alt="Custom trophy">
+            <span>Trophies</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    
 
     <!-- Why Choose Us Section -->
     <section class="why-choose-us">
-      <h3>Our Values</h3>
+      <h1>Our Values</h1>
       <div class="cards">
         <div class="card">
             <h3>Quality Products</h3>
@@ -120,22 +113,7 @@
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="site-inner">
-      <div class="footer-left">
-      <img src="/logo/KangaLogo.png" alt="Kanga Logo">
-      <p>Kanga Custom Products</p>
-      <small>Kanga Custom Products provides custom medals, pins, and trophiesfor sporting events and achievements.</small>
-      </div>
-      <div class="footer-right">
-      <p>Contact</p>
-      <p><span>📞</span> 801-941-1632</p>
-      <p><span>📧</span> kangainfo@gmail.com</p>
-      <p><span>📍</span> Salt Lake City, UT 84115</p>
-      </div>
-    </div>
-  </footer>
+  <div data-include="footer"></div>
   <script src="script.js" defer></script>
 </body>
 </html>
