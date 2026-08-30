@@ -12,32 +12,131 @@
   <!-- Main Content -->
   <main>
     <section class="request-quote">
-      <h3>Tell us what you need!</h3>
+
+      <div class="quote-header">
+        <h1>Request a Quote</h1>
+        <p>
+          Tell us what you're looking for and we'll get back to you with a quote.
+        </p>
+      </div>
+  
       <div class="quote-form">
+  
         <form action="https://formsubmit.co/jasonvero1998@gmail.com" method="POST">
+  
+          <!-- FormSubmit settings -->
           <input type="hidden" name="_subject" value="New quote request - Kanga Custom Products">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="true">
-
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" title="Enter a 10-digit phone number" required>
-
-          <label for="company">Company / Organisation</label>
-          <input type="text" id="company" name="company" placeholder="Your Company or Organisation">
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-
-          <button type="submit">Submit</button>
+  
+          <!-- Name + Email -->
+          <div class="form-row">
+  
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              >
+            </div>
+  
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              >
+            </div>
+  
+          </div>
+  
+          <!-- Phone + Company -->
+          <div class="form-row">
+  
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Your Phone Number"
+                inputmode="numeric"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                title="Enter a 10-digit phone number"
+                required
+              >
+            </div>
+  
+            <div class="form-group">
+              <label for="company">Company / Organisation</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Your Company or Organisation"
+              >
+            </div>
+  
+          </div>
+  
+          <!-- Message -->
+          <div class="form-group">
+  
+            <label for="message">Tell us about your requirements</label>
+  
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us about your product, quantity, preferred design, event date, or any other requirements..."
+              rows="6"
+              required
+            ></textarea>
+  
+          </div>
+  
+          <!-- Submit -->
+          <button type="submit">
+            Request a Quote
+          </button>
+  
         </form>
+  
+        <!-- What happens next -->
+        <div class="quote-next">
+  
+          <h2>What happens next?</h2>
+  
+          <div class="next-steps">
+  
+            <div class="next-step">
+              <span class="step-number">1</span>
+              <p>Submit your enquiry</p>
+            </div>
+  
+            <div class="next-step">
+              <span class="step-number">2</span>
+              <p>We'll review your requirements</p>
+            </div>
+  
+            <div class="next-step">
+              <span class="step-number">3</span>
+              <p>We'll contact you to discuss your quote</p>
+            </div>
+  
+          </div>
+  
+        </div>
+  
       </div>
-    </section>
+  
+    </section>  
 
     <div class="modal" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title" hidden>
       <div class="modal-content">

@@ -235,21 +235,79 @@ footer .site-inner {
   font-size: 1rem;
 }
 
-/* Why Choose Us Section */
-.why-choose-us {
-  padding: 20px;
+/* Our Values Section */
+.our-values {
+  padding: 80px 8%;
   text-align: center;
+
+  background:
+      linear-gradient(
+          rgba(255, 255, 255, 0.88),
+          rgba(255, 255, 255, 0.88)
+      ),
+      url("/backgroundImages/background2.png");
+
+  background-size: cover;
+  background-position: center;
 }
 
-.why-choose-us h4 {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
+.values-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #1f1f1f;
 }
 
-.why-choose-us p {
-  margin: 10px 0;
-  line-height: 1.6;
+.values-header p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.value-section {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.value-item {
+  background: rgba(255, 255, 255, 0.92);
+
+  padding: 35px;
+
+  border-radius: 12px;
+
+  text-align: left;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  border-left: 5px solid #ff7a00;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.value-item h3 {
+  font-size: 1.45rem;
+  margin-bottom: 15px;
+
+  color: #222;
+}
+
+.value-item p {
   font-size: 1rem;
+  line-height: 1.6;
+
+  color: #555;
+
+  margin: 0;
 }
 
 /* Contact Us Section */
@@ -279,68 +337,425 @@ footer .site-inner {
 }
 
 /* Request a Quote Section (Page)*/
+/* ========================================
+   REQUEST A QUOTE SECTION
+======================================== */
+
 .request-quote {
-  padding: 20px;
+  padding: 80px 8%;
+
   text-align: center;
+
   background:
     radial-gradient(
-    circle at 75% 20%,
-    rgba(255, 220, 120, 0.8),
-    transparent 25%
+      circle at 75% 20%,
+      rgba(255, 220, 120, 0.8),
+      transparent 25%
     ),
     linear-gradient(
       135deg,
       #e85d04,
       #f48c06,
       #ffba08
-  );
+    );
 }
 
-.request-quote h3 {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
+
+/* ========================================
+   PAGE HEADING
+======================================== */
+
+.quote-header h1 {
+  margin: 0 0 10px;
+
+  font-size: 2.8rem;
+
+  color: #1f1f1f;
 }
+
+.quote-header p {
+  margin: 0 auto 40px;
+
+  max-width: 650px;
+
+  font-size: 1.1rem;
+
+  line-height: 1.6;
+
+  color: #333;
+}
+
+
+/* ========================================
+   FORM CONTAINER
+======================================== */
 
 .quote-form {
-  max-width: 600px;
+  max-width: 900px;
+
   margin: 0 auto;
-  background-color: #f4f4f4;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84)),
+
+  padding: 40px;
+
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 255, 255, 0.92)
+    ),
     url("backgroundImages/background3.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.12);
 }
+
+
+/* ========================================
+   FORM
+======================================== */
 
 .quote-form form {
   display: flex;
+
   flex-direction: column;
-  gap: 15px;
+
+  gap: 20px;
 }
+
+
+/* ========================================
+   TWO-COLUMN ROW
+======================================== */
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+
+/* ========================================
+   FORM GROUP
+======================================== */
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  text-align: left;
+}
+
+
+/* ========================================
+   LABELS
+======================================== */
 
 .quote-form label {
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  color: #222;
 }
 
-.quote-form input, .quote-form textarea {
+
+/* ========================================
+   INPUTS + TEXTAREA
+======================================== */
+
+.quote-form input,
+.quote-form textarea {
   box-sizing: border-box;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+
   width: 100%;
+
+  padding: 13px 15px;
+
+  border: 1px solid #d5d5d5;
+
+  border-radius: 8px;
+
+  background-color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 1rem;
+
+  color: #222;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
+
+/* Placeholder text */
+
+.quote-form input::placeholder,
+.quote-form textarea::placeholder {
+  color: #888;
+}
+
+
+/* Focus effect */
+
+.quote-form input:focus,
+.quote-form textarea:focus {
+  outline: none;
+
+  border-color: #ff7a00;
+
+  box-shadow:
+    0 0 0 3px rgba(255, 122, 0, 0.15);
+}
+
+
+/* Textarea */
+
+.quote-form textarea {
+  resize: vertical;
+
+  min-height: 150px;
+}
+
+
+/* ========================================
+   SUBMIT BUTTON
+======================================== */
 
 .quote-form button {
-  padding: 10px 20px;
-  background-color: #ff9800;
-  color: white;
+  align-self: center;
+
+  padding: 14px 35px;
+
+  margin-top: 5px;
+
+  background-color: #1f1f1f;
+
+  color: #ffffff;
+
   border: none;
-  border-radius: 5px;
+
+  border-radius: 8px;
+
   cursor: pointer;
+
+  font-family: inherit;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
+
+/* Button hover */
+
+.quote-form button:hover {
+  background-color: #333333;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Button click */
+
+.quote-form button:active {
+  transform: translateY(0);
+}
+
+
+/* ========================================
+   WHAT HAPPENS NEXT
+======================================== */
+
+.quote-next {
+  margin-top: 45px;
+
+  padding-top: 30px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+
+.quote-next h2 {
+  margin-bottom: 25px;
+
+  font-size: 1.5rem;
+
+  color: #222;
+}
+
+
+/* ========================================
+   NEXT STEPS
+======================================== */
+
+.next-steps {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+.next-step {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  color: #333;
+}
+
+
+.next-step p {
+  margin: 0;
+
+  font-size: 0.95rem;
+
+  line-height: 1.4;
+}
+
+
+/* Number circles */
+
+.step-number {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 32px;
+
+  height: 32px;
+
+  border-radius: 50%;
+
+  background-color: #ff7a00;
+
+  color: #ffffff;
+
+  font-weight: 700;
+
+  font-size: 0.9rem;
+}
+
+
+/* ========================================
+   TABLET / MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+  .request-quote {
+    padding: 60px 5%;
+  }
+
+
+  /* Heading */
+
+  .quote-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .quote-header p {
+    font-size: 1rem;
+
+    margin-bottom: 30px;
+  }
+
+
+  /* Form */
+
+  .quote-form {
+    padding: 25px;
+
+    border-radius: 12px;
+  }
+
+
+  /* Change two columns to one */
+
+  .form-row {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+
+  /* Next steps become vertical */
+
+  .next-steps {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+
+  .next-step {
+    justify-content: flex-start;
+  }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+
+  .request-quote {
+    padding: 45px 4%;
+  }
+
+
+  .quote-header h1 {
+    font-size: 2rem;
+  }
+
+
+  .quote-form {
+    padding: 20px;
+  }
+
+
+  .quote-form input,
+  .quote-form textarea {
+    padding: 12px;
+  }
+
+
+  .quote-form button {
+    width: 100%;
+  }
+
+}
 .modal[hidden] {
   display: none;
 }
