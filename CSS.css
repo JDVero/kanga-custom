@@ -127,6 +127,7 @@ header .site-inner,
 footer .site-inner {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
@@ -140,10 +141,14 @@ header .site-inner {
 }
 
 footer .site-inner {
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
   gap: 50px;
   max-width: 1400px;
-  padding: 40px;
+  width: 100%;
+  padding: 40px 20px;
 }
 
 /* Sub Navbar */
@@ -1026,8 +1031,57 @@ footer img {
   height: 40px;
 }
 
+.footer-left,
+.footer-right {
+  flex: 1 1 0;
+  min-width: 220px;
+}
+
+.footer-left {
+  max-width: 55%;
+}
+
+.footer-right {
+  margin-left: auto;
+  flex: 0 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .footer-right p {
   margin: 5px 0;
+  white-space: nowrap;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.social-links img {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 a {
