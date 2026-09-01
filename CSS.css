@@ -250,7 +250,7 @@ footer .site-inner {
           rgba(255, 255, 255, 0.88),
           rgba(255, 255, 255, 0.88)
       ),
-      url("/backgroundImages/background2.png");
+      url("backgroundImages/background2.png");
 
   background-size: cover;
   background-position: center;
@@ -877,7 +877,7 @@ background:
 .why-choose-us {
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84)),
-    url("/backgroundImages/background2.png");
+    url("backgroundImages/background2.png");
 }
 
 .products h3, .why-choose-us h3 {
@@ -1023,7 +1023,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: #333333;
+  background-color: #1f1f1f;
   color: white;
 }
 
@@ -1039,6 +1039,26 @@ footer img {
 
 .footer-left {
   max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer-left > p:first-child,
+.footer-right > p:first-child {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-left small {
+  display: block;
+  max-width: 420px;
+  color: #d9d9d9;
+  line-height: 1.6;
+  font-size: 0.85rem;
 }
 
 .footer-right {
@@ -1049,11 +1069,47 @@ footer img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-left: 20px;
 }
 
 .footer-right p {
   margin: 5px 0;
   white-space: nowrap;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  color: #ff9800;
+  flex-shrink: 0;
+}
+
+.contact-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .social-links {
