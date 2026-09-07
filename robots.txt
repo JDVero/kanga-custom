@@ -1,0 +1,5 @@
+# robots.txt for Kanga Custom Products
+User-agent: *
+Allow: /
+
+Sitemap: http://www.kangapro.com/sitemap.xml
