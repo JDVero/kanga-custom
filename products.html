@@ -3,59 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products - Kanga Custom Products</title>
+  <title>Custom Products Catalog — Medals, Pins & Trophies | Kanga Custom Products</title>
+  <meta name="description" content="Explore Kanga's custom tournament products: die-cast medals with neck ribbons, trading lapel pins, and championship trophies. Fast quotes for tournament directors.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CSS.css">
 </head>
 <body>
+  <!-- Header -->
   <div data-include="header"></div>
 
-  <!-- Small Header Navbar -->
-  <nav class="sub-navbar">
-    <ul>
-      <li><a href="#medals">Medals</a></li>
-      <li><a href="#pins">Pins</a></li>
-      <li><a href="#trophies">Trophies</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main Content -->
   <main>
-    <!-- Medals Section -->
-    <section id="medals">
-      <h3>Medals</h3>
-      <div class="product-grid">
-        <img src="medal1.jpg" alt="Medal 1">
-        <img src="medal2.jpg" alt="Medal 2">
-        <img src="medal3.jpg" alt="Medal 3">
-        <img src="medal4.jpg" alt="Medal 4">
-        <img src="medal5.jpg" alt="Medal 5">
-        <img src="medal6.jpg" alt="Medal 6">
+    <!-- Products Banner -->
+    <section class="page-header-banner" aria-label="Products Catalog Header">
+      <div class="site-inner">
+        <span style="color: #FDBA74; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 8px;">Our Specialty Product Lines</span>
+        <h1>Tournament Awards Catalog</h1>
+        <p>
+          Select a category below to explore custom options, material finishes, and request direct pricing.
+        </p>
       </div>
-      <button class="view-more-btn">View More</button>
     </section>
 
-    <!-- Pins Section -->
-    <section id="pins">
-      <h3>Pins</h3>
-      <div class="product-grid">
-        <img src="pin1.jpg" alt="Pin 1">
-        <img src="pin2.jpg" alt="Pin 2">
-        <img src="pin3.jpg" alt="Pin 3">
-        <img src="pin4.jpg" alt="Pin 4">
-        <img src="pin5.jpg" alt="Pin 5">
-        <img src="pin6.jpg" alt="Pin 6">
-      </div>
-      <button class="view-more-btn">View More</button>
-    </section>
+    <!-- Category Hub -->
+    <section class="section-wrap">
+      <div class="site-inner">
+        <div class="products-row">
+          <!-- 1. Medals Card -->
+          <div class="product-item-card">
+            <div class="product-img-box">
+              <span class="product-tag-chip">Primary Specialty</span>
+              <img src="products/Bunga%20Run%20Medal.jpg" alt="Custom tournament die-cast sporting medals with printed neck ribbons">
+            </div>
+            <div class="product-body-content">
+              <h3>Custom Tournament Medals</h3>
+              <p>Heavyweight zinc-alloy medals customized with your tournament logo, 3D relief detailing, and sublimated neck ribbons.</p>
+              <ul class="spec-list">
+                <li>Antique Gold, Silver, Bronze & Shiny Finishes</li>
+                <li>Custom Sublimated & Woven Neck Ribbons</li>
+                <li>Custom 2D/3D molds with cut-outs & glitter</li>
+                <li>Fast turnaround before finals day</li>
+              </ul>
+              <a href="medals.html" class="product-link-btn">Explore Custom Medals &rarr;</a>
+            </div>
+          </div>
 
-    <!-- Trophies Section -->
-    <section id="trophies">
-      <h3>Trophies</h3>
-      <button class="view-more-btn">View Trophies</button>
+          <!-- 2. Pins Card -->
+          <div class="product-item-card">
+            <div class="product-img-box">
+              <span class="product-tag-chip">Trading & Team Pins</span>
+              <img src="products/Dixie%20Flip%202023.jpg" alt="Custom event trading lapel pins">
+            </div>
+            <div class="product-body-content">
+              <h3>Custom Lapel & Trading Pins</h3>
+              <p>Collectible pins for sports tournaments, team trading, club milestones, and event sponsors with vibrant enamel colors.</p>
+              <ul class="spec-list">
+                <li>Soft Enamel, Hard Enamel & Die-Struck Metal</li>
+                <li>Glitter, Glow-in-the-Dark, Spinners & Sliders</li>
+                <li>Secure Rubber or Butterfly Clutch Backings</li>
+                <li>Individual protective poly-bagging</li>
+              </ul>
+              <a href="pins.html" class="product-link-btn">Explore Custom Pins &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 3. Trophies Card (External Redirect) -->
+          <div class="product-item-card" id="trophies">
+            <div class="product-img-box">
+              <span class="product-tag-chip ext">National Catalog</span>
+              <img src="products/trophy.jpg" alt="Championship trophies and awards catalog">
+            </div>
+            <div class="product-body-content">
+              <h3>Trophies & Award Plaques</h3>
+              <p>Championship cups, acrylic trophies, wood plaques, and team honors customizable for all major sports and age divisions.</p>
+              <ul class="spec-list">
+                <li>Full range of multi-tier column trophies & cups</li>
+                <li>Custom laser engraving & metal plates</li>
+                <li>Access to premier national supplier catalogs</li>
+                <li>Bulk team packages available</li>
+              </ul>
+              <a href="https://www.sportawards.com" target="_blank" rel="noopener noreferrer" class="product-link-btn" style="background: #1D4ED8;">Open External Catalogue ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Order Banner -->
+        <div style="background: var(--bg-slate-light); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 36px; text-align: center; margin-top: 50px;">
+          <h3 style="font-size: 1.4rem; color: var(--brand-navy); margin-bottom: 8px;">Need a combination package or custom quote?</h3>
+          <p style="color: var(--text-muted); max-width: 580px; margin: 0 auto 20px; font-size: 0.95rem;">
+            Whether you need 50 medals or a complete package of 1,000 medals plus pins, we're ready to help.
+          </p>
+          <a href="request-quote.html" class="btn-primary">Request a Free Quote &rarr;</a>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <div data-include="footer"></div>
+
   <script src="script.js" defer></script>
 </body>
 </html>
