@@ -73,7 +73,7 @@ function initNavigation() {
 function initializeForms() {
   const forms = document.querySelectorAll('form[action*="formsubmit.co"]');
   const modal = document.querySelector('#quote-modal');
-  const closeButton = modal?.querySelector('.modal-close');
+  const closeButton = modal?.querySelector('.modal-close, #close-modal');
 
   function closeModal() {
     if (modal) {
