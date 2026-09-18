@@ -3,151 +3,205 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Request a Quote - Kanga Custom Products</title>
+  <meta name="description" content="Request a custom price quote and free 2D/3D digital artwork proof for your tournament sporting medals, pins, or trophies from Kanga Custom Products.">
+  <title>Request a Quote - Kanga Custom Products | Free Proofs &amp; Direct Pricing</title>
   <link rel="stylesheet" href="CSS.css">
+  <link rel="canonical" href="http://www.kangapro.com/request-quote.html">
 </head>
 <body>
   <div data-include="header"></div>
 
-  <!-- Main Content -->
-  <main>
-    <section class="request-quote">
-
-      <div class="quote-header">
-        <h1>Request a Quote</h1>
+  <main id="main-content">
+    <!-- Hero Header -->
+        <section class="page-header-banner">
+      <div class="site-inner">
+        <span class="hero-eyebrow">★ Direct Pricing Engine</span>
+        <h1>Request a Custom Quote</h1>
         <p>
-          Tell us what you're looking for and we'll get back to you with a quote.
+          Submit your event details below to receive a guaranteed factory-direct price quote and free 2D/3D digital artwork proofs.
         </p>
       </div>
-  
-      <div class="quote-form">
-  
-        <form action="https://formsubmit.co/jasonvero1998@gmail.com" method="POST">
-  
-          <!-- FormSubmit settings -->
-          <input type="hidden" name="_subject" value="New quote request - Kanga Custom Products">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="true">
-  
-          <!-- Name + Email -->
-          <div class="form-row">
-  
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-              >
-            </div>
-  
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              >
-            </div>
-  
-          </div>
-  
-          <!-- Phone + Company -->
-          <div class="form-row">
-  
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Your Phone Number"
-                inputmode="numeric"
-                pattern="[0-9]{10}"
-                maxlength="10"
-                title="Enter a 10-digit phone number"
-                required
-              >
-            </div>
-  
-            <div class="form-group">
-              <label for="company">Company / Organisation</label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                placeholder="Your Company or Organisation"
-              >
-            </div>
-  
-          </div>
-  
-          <!-- Message -->
-          <div class="form-group">
-  
-            <label for="message">Tell us about your requirements</label>
-  
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Tell us about your product, quantity, preferred design, event date, or any other requirements..."
-              rows="6"
-              required
-            ></textarea>
-  
-          </div>
-  
-          <!-- Submit -->
-          <button type="submit">
-            Request a Quote
-          </button>
-  
-        </form>
-  
-        <!-- What happens next -->
-        <div class="quote-next">
-  
-          <h2>What happens next?</h2>
-  
-          <div class="next-steps">
-  
-            <div class="next-step">
-              <span class="step-number">1</span>
-              <p>Submit your enquiry</p>
-            </div>
-  
-            <div class="next-step">
-              <span class="step-number">2</span>
-              <p>We'll review your requirements</p>
-            </div>
-  
-            <div class="next-step">
-              <span class="step-number">3</span>
-              <p>We'll contact you to discuss your quote</p>
-            </div>
-  
-          </div>
-  
-        </div>
-  
-      </div>
-  
-    </section>  
+    </section>
 
-    <div class="modal" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title" hidden>
-      <div class="modal-content">
-        <button class="modal-close" type="button" aria-label="Close">&times;</button>
-        <h2 id="quote-modal-title">Quote Sent!</h2>
-        <p>Hang tight. We'll be reaching out to you shortly!</p>
+    <!-- Quote Form Section (2-Column HCI Layout) -->
+    <section class="section-wrap bg-light">
+      <div class="site-inner">
+        
+        <div class="quote-page-grid">
+          
+          <!-- Left Column: The Interactive Quote Form Card -->
+          <div class="quote-form-card">
+            <div class="form-card-header">
+              <h2 class="form-card-title">Event &amp; Award Details</h2>
+              <p class="form-card-subtitle">Fill in your specifications below for a direct quote from John Bouwer.</p>
+            </div>
+
+            <form id="custom-quote-form" action="https://formsubmit.co/kangainfo@gmail.com" method="POST" class="quote-form-body">
+              <!-- FormSubmit Settings -->
+              <input type="hidden" name="_subject" value="New Custom Quote Request - Kanga Custom Products">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+
+              <!-- Row 1: Name + Email -->
+              <div class="form-grid-2">
+                <div class="form-field-group">
+                  <label for="quote-name" class="field-label">Full Name <span class="required-star">*</span></label>
+                  <input type="text" id="quote-name" name="name" class="form-input" placeholder="e.g., Coach Sarah Miller" required>
+                </div>
+                <div class="form-field-group">
+                  <label for="quote-email" class="field-label">Email Address <span class="required-star">*</span></label>
+                  <input type="email" id="quote-email" name="email" class="form-input" placeholder="e.g., sarah@leaguesoccer.org" required>
+                </div>
+              </div>
+
+              <!-- Row 2: Phone + Organization -->
+              <div class="form-grid-2">
+                <div class="form-field-group">
+                  <label for="quote-phone" class="field-label">Phone / Text Number <span class="required-star">*</span></label>
+                  <input type="tel" id="quote-phone" name="phone" class="form-input" placeholder="e.g., 801-555-0199" required>
+                </div>
+                <div class="form-field-group">
+                  <label for="quote-org" class="field-label">Club / League / School</label>
+                  <input type="text" id="quote-org" name="organization" class="form-input" placeholder="e.g., Wasatch Youth Soccer">
+                </div>
+              </div>
+
+              <!-- Row 3: Product Interest Checkboxes -->
+              <div class="form-field-group">
+                <label class="field-label">Product Type(s) Required</label>
+                <div class="checkbox-options-grid">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="product_type[]" value="Custom Medals &amp; Ribbons" checked>
+                    <span>Custom Medals &amp; Ribbons</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="product_type[]" value="Trading Lapel Pins">
+                    <span>Trading Lapel Pins</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="product_type[]" value="Championship Trophies">
+                    <span>Trophies &amp; Cups</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="product_type[]" value="Other Custom Awards">
+                    <span>Other / Custom Request</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Row 4: Quantity + Event Date -->
+              <div class="form-grid-2">
+                <div class="form-field-group">
+                  <label for="quote-qty" class="field-label">Estimated Quantity</label>
+                  <select id="quote-qty" name="estimated_quantity" class="form-select">
+                    <option value="50-100 units">50 &ndash; 100 units</option>
+                    <option value="100-300 units" selected>100 &ndash; 300 units</option>
+                    <option value="300-500 units">300 &ndash; 500 units</option>
+                    <option value="500-1000 units">500 &ndash; 1,000 units</option>
+                    <option value="1000+ units">1,000+ units (Volume Pricing)</option>
+                  </select>
+                </div>
+                <div class="form-field-group">
+                  <label for="quote-date" class="field-label">Target In-Hands Event Date <span class="required-star">*</span></label>
+                  <input type="date" id="quote-date" name="event_date" class="form-input" required>
+                </div>
+              </div>
+
+              <!-- Row 5: Project Details & Requirements -->
+              <div class="form-field-group">
+                <label for="quote-message" class="field-label">Project Details &amp; Design Notes <span class="required-star">*</span></label>
+                <textarea id="quote-message" name="message" class="form-textarea" rows="4" placeholder="Tell us about your medal size preference, ribbon artwork colors, logo ideas, or special requirements..." required></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-block btn-lg" id="quote-submit-btn">
+                  Submit Quote Request &rarr;
+                </button>
+              </div>
+              <p class="form-trust-notice">
+                🔒 Your information is confidential. We will respond directly via phone/email with your quote and digital proof options.
+              </p>
+            </form>
+          </div>
+
+          <!-- Right Column: What Happens Next & Direct Help Sidebar -->
+          <div class="quote-sidebar">
+            
+            <!-- What Happens Next Process Timeline -->
+            <div class="sidebar-process-card">
+              <h3 class="sidebar-card-title">What Happens Next?</h3>
+              
+              <div class="quote-steps-timeline">
+                <div class="quote-step-item">
+                  <div class="step-num-badge">1</div>
+                  <div class="step-desc-wrap">
+                    <h4>Submit Your Inquiry</h4>
+                    <p>Provide your quantities, tournament dates, and artwork/logo concepts.</p>
+                  </div>
+                </div>
+
+                <div class="quote-step-item">
+                  <div class="step-num-badge">2</div>
+                  <div class="step-desc-wrap">
+                    <h4>Free 2D/3D Digital Proof</h4>
+                    <p>Our design team creates a full-color proof showing mold reliefs, plating, and ribbon art.</p>
+                  </div>
+                </div>
+
+                <div class="quote-step-item">
+                  <div class="step-num-badge">3</div>
+                  <div class="step-desc-wrap">
+                    <h4>Quote Approval &amp; Production</h4>
+                    <p>Once you approve the proof and price, precision manufacturing begins immediately.</p>
+                  </div>
+                </div>
+
+                <div class="quote-step-item">
+                  <div class="step-num-badge">4</div>
+                  <div class="step-desc-wrap">
+                    <h4>Guaranteed On-Time Delivery</h4>
+                    <p>Your custom awards arrive safely before your tournament opening kickoff.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Owner Contact Card -->
+            <div class="sidebar-contact-card">
+              <h4>Need Immediate Answers?</h4>
+              <p>Speak directly with owner John Bouwer for urgent deadlines or custom specifications.</p>
+              
+              <div class="direct-contact-action">
+                <span class="direct-label">Direct Phone / Text:</span>
+                <a href="tel:18019411632" class="direct-phone-link">801-941-1632</a>
+              </div>
+              
+              <div class="direct-contact-action">
+                <span class="direct-label">Direct Email:</span>
+                <a href="mailto:kangainfo@gmail.com" class="direct-email-link">kangainfo@gmail.com</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-    </div>
+    </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Confirmation Modal -->
+  <div class="modal" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title" hidden>
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" type="button" aria-label="Close modal">&times;</button>
+      <div class="modal-icon-wrap">✓</div>
+      <h2 id="quote-modal-title">Quote Request Received!</h2>
+      <p>Thank you! John Bouwer and the Kanga team have received your project details and will follow up with your custom price breakdown and artwork options shortly.</p>
+      <button class="btn btn-primary modal-ok-btn" type="button">Back to Website</button>
+    </div>
+  </div>
+
   <div data-include="footer"></div>
   <script src="script.js" defer></script>
 </body>
