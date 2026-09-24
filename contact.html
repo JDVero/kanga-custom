@@ -3,34 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Kanga Custom Products</title>
+  <meta name="description" content="Contact Kanga Custom Products in South Salt Lake City, Utah. Call 801-941-1632 or email kangainfo@gmail.com for custom tournament medals, trading pins, and championship awards.">
+  <title>Contact Us - Kanga Custom Products | South Salt Lake City</title>
   <link rel="stylesheet" href="CSS.css">
+  <link rel="canonical" href="http://www.kangapro.com/contact.html">
+
+<style>
+
+/* Isolated Page Styles to prevent global CSS conflicts */
+.page-header-banner { background: #0F172A; color: white; padding: 60px 20px; text-align: center; border-bottom: 4px solid #F97316; }
+.hero-eyebrow { display: inline-block; color: #F97316; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; font-size: 0.9rem; }
+.page-header-banner h1 { font-size: 2.5rem; margin-bottom: 20px; color: white; }
+.page-header-banner p { max-width: 600px; margin: 0 auto; color: #cbd5e1; font-size: 1.1rem; line-height: 1.6; }
+.section-tag { display: inline-block; background-color: rgba(249, 115, 22, 0.1); color: #F97316; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.85rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+.section-wrap { padding: 60px 20px; }
+.text-center { text-align: center; }
+
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+.contact-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 1px solid #f1f5f9; text-align: center; }
+.contact-card h3 { color: #0F172A; margin-bottom: 15px; }
+.form-group { margin-bottom: 20px; text-align: left; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #334155; }
+.form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; }
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: #F97316; box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2); }
+@media(max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+
+</style>
 </head>
-<body>
+<body class="bg-slate-light">
   <div data-include="header"></div>
 
-  <!-- Main Content -->
-  <main>
-    <section class="contact-us">
-      <h4>Get in touch with us!</h4>
-      <div class="contact-cards">
-        <div class="card">
-          <span>📞</span>
-          <p>801-941-1632</p>
-        </div>
-        <div class="card">
-          <span>📧</span>
-          <p>kangainfo@gmail.com</p>
-        </div>
-        <div class="card">
-          <span>📍</span>
-          <p>Salt Lake City, UT 84115</p>
+  <main id="main-content">
+    <section class="page-header-banner">
+      <div class="site-inner">
+        <span class="hero-eyebrow">★ Direct Factory Support</span>
+        <h1>Get in Touch with Kanga</h1>
+        <p>
+          Speak directly with founder John Bouwer for personalized advice, custom quotes, and free digital artwork proofs. No automated menus—just real craftsmanship.
+        </p>
+      </div>
+    </section>
+    <section class="contact-master-section section-wrap">
+      <div class="site-inner">
+        
+        
+
+        <div class="contact-grid-clean">
+          
+          <!-- Form Column -->
+          <div class="contact-form-card">
+            <h2 class="form-title">Send a Direct Message</h2>
+            <form id="contact-form" class="custom-form" action="https://formsubmit.co/ajax/kangainfo@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="New Website Contact Message">
+              <input type="hidden" name="_captcha" value="false">
+
+              <div class="form-group">
+                <label for="contact-name">Full Name <span class="required-star">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Coach David Miller" required>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="contact-email">Email Address <span class="required-star">*</span></label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. david@soccertournament.org" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number <span class="required-star">*</span></label>
+                  <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="e.g. (801) 555-0199" required>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="contact-org">Organization / Tournament</label>
+                  <input type="text" id="contact-org" name="organization" class="form-input" placeholder="e.g. Wasatch Youth Soccer">
+                </div>
+                <div class="form-group">
+                  <label for="contact-interest">Product of Interest</label>
+                  <select id="contact-interest" name="product_interest" class="form-select">
+                    <option value="Custom Medals">Custom Tournament Medals</option>
+                    <option value="Trading Pins">Custom Trading Lapel Pins</option>
+                    <option value="Trophies">Trophies & Awards</option>
+                    <option value="General Question">General Inquiry</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message Details <span class="required-star">*</span></label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="5" placeholder="Tell us about your event dates, estimated quantities, or design ideas..." required></textarea>
+              </div>
+
+              <div class="form-action-group">
+                <button type="submit" class="btn btn-primary btn-block">Send Message &rarr;</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Info Sidebar Column -->
+          <div class="contact-sidebar">
+            
+            <div class="sidebar-contact-info">
+              <h3>Contact Details</h3>
+              <div class="info-row">
+                <div class="icon-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="info-text">
+                  <strong>Call or Text Direct</strong>
+                  <a href="tel:18019411632">801-941-1632</a>
+                  <span class="sub">Mon-Fri: 8AM-5PM MT</span>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="icon-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="info-text">
+                  <strong>Email Direct</strong>
+                  <a href="mailto:kangainfo@gmail.com">kangainfo@gmail.com</a>
+                  <span class="sub">Quotes & Artwork Support</span>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="icon-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="info-text">
+                  <strong>Workshop Location</strong>
+                  <span>South Salt Lake City, UT</span>
+                  <span class="sub">Proudly Serving Nationwide</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-trust-box">
+              <h3>Why work with Kanga?</h3>
+              <ul class="trust-list">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Direct Importer Rates</strong> (10-20% lower costs)</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Free 2D & 3D Digital Proofing</strong></span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>100% On-Time Delivery Guarantee</strong></span>
+                </li>
+              </ul>
+              <div class="trust-action">
+                <p>Have exact quantities ready?</p>
+                <a href="request-quote.html" class="btn btn-secondary" style="width: 100%; justify-content: center;">Launch Quote Engine &rarr;</a>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <div data-include="footer"></div>
+
+  <!-- Instant Confirmation Modal Popup -->
+  <div id="quote-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-header-icon">&check;</div>
+      <h3 class="modal-title">Message Sent Successfully!</h3>
+      <p class="modal-desc">
+        Thank you for contacting Kanga Custom Products. John Bouwer will review your inquiry and get in touch with you shortly.
+      </p>
+      <div class="modal-actions">
+        <button id="close-modal" class="btn btn-primary" style="min-width: 140px;">Got It</button>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js" defer></script>
 </body>
 </html>
