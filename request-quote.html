@@ -1,154 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Request a Quote - Kanga Custom Products</title>
-  <link rel="stylesheet" href="CSS.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Request a quote from Kanga Custom Products for custom medals, pins and awards."
+    >
+
+    <title>
+        Request a Quote - Kanga Custom Products
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="CSS.css"
+    >
+
 </head>
+
+
 <body>
-  <div data-include="header"></div>
 
-  <!-- Main Content -->
-  <main>
-    <section class="request-quote">
+    <div data-include="header"></div>
 
-      <div class="quote-header">
-        <h1>Request a Quote</h1>
-        <p>
-          Tell us what you're looking for and we'll get back to you with a quote.
-        </p>
-      </div>
-  
-      <div class="quote-form">
-  
-        <form action="https://formsubmit.co/jasonvero1998@gmail.com" method="POST">
-  
-          <!-- FormSubmit settings -->
-          <input type="hidden" name="_subject" value="New quote request - Kanga Custom Products">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="true">
-  
-          <!-- Name + Email -->
-          <div class="form-row">
-  
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-              >
+
+    <main>
+
+
+        <!-- =====================================================
+             REQUEST A QUOTE
+             ===================================================== -->
+
+        <section class="request-quote">
+
+            <div class="quote-header">
+
+                <p class="quote-eyebrow">
+                    REQUEST A QUOTE
+                </p>
+
+                <h1>
+                    Request a Quote
+                </h1>
+
+                <p>
+                    Tell us what you're looking for and we'll
+                    get back to you with a quote.
+                </p>
+
             </div>
-  
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              >
+
+
+            <div class="quote-form">
+
+
+                <!-- =================================================
+                     QUOTE FORM
+                     ================================================= -->
+                <!-- Change email to Kanga's Email -->
+                <form
+                    id="quote-form"
+                    action="https://formsubmit.co/kangainfo@gmail.com"
+                    method="POST"
+                >
+
+                    <!-- FormSubmit Settings -->
+
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New quote request - Kanga Custom Products"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="_template"
+                        value="table"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="_captcha"
+                        value="true"
+                    >
+
+
+                    <!-- Name + Email -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your Name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Your Email"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Phone + Company -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Your Phone Number"
+                                autocomplete="tel"
+                                inputmode="numeric"
+                                pattern="[0-9]{10}"
+                                minlength="10"
+                                maxlength="10"
+                                title="Please enter a 10-digit phone number"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="company">
+                                Company / Organisation
+                            </label>
+
+                            <input
+                                type="text"
+                                id="company"
+                                name="company"
+                                placeholder="Your Company or Organisation"
+                                autocomplete="organization"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Message -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Tell us about your requirements
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Tell us about your product, quantity, preferred design, event date, or any other requirements..."
+                            rows="6"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Submit -->
+
+                    <button
+                        type="submit"
+                    >
+                        Request a Quote
+                    </button>
+
+                </form>
+
+
+
+                <!-- =================================================
+                     WHAT HAPPENS NEXT
+                     ================================================= -->
+
+                <div class="quote-next">
+
+                    <h2>
+                        What happens next?
+                    </h2>
+
+                    <div class="next-steps">
+
+
+                        <div class="next-step">
+
+                            <span class="step-number">
+                                1
+                            </span>
+
+                            <p>
+                                Submit your enquiry
+                            </p>
+
+                        </div>
+
+
+                        <div class="next-step">
+
+                            <span class="step-number">
+                                2
+                            </span>
+
+                            <p>
+                                We'll review your requirements
+                            </p>
+
+                        </div>
+
+
+                        <div class="next-step">
+
+                            <span class="step-number">
+                                3
+                            </span>
+
+                            <p>
+                                We'll contact you to discuss your quote
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
             </div>
-  
-          </div>
-  
-          <!-- Phone + Company -->
-          <div class="form-row">
-  
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Your Phone Number"
-                inputmode="numeric"
-                pattern="[0-9]{10}"
-                maxlength="10"
-                title="Enter a 10-digit phone number"
-                required
-              >
+
+        </section>
+
+
+
+        <!-- =====================================================
+             QUOTE SUCCESS MODAL
+             ===================================================== -->
+
+        <div
+            id="quote-modal"
+            class="modal-backdrop"
+            hidden
+            aria-hidden="true"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="quote-modal-title"
+        >
+
+            <div class="modal-box">
+
+                <div class="modal-header-icon">
+                    &check;
+                </div>
+
+                <h3
+                    id="quote-modal-title"
+                    class="modal-title"
+                >
+                    Quote Request Sent!
+                </h3>
+
+                <p class="modal-desc">
+                    Thank you for contacting Kanga Custom Products.
+                    We'll review your requirements and get back to
+                    you shortly.
+                </p>
+
+                <div class="modal-actions">
+
+                    <button
+                        type="button"
+                        class="modal-button"
+                    >
+                        Got It
+                    </button>
+
+                </div>
+
             </div>
-  
-            <div class="form-group">
-              <label for="company">Company / Organisation</label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                placeholder="Your Company or Organisation"
-              >
-            </div>
-  
-          </div>
-  
-          <!-- Message -->
-          <div class="form-group">
-  
-            <label for="message">Tell us about your requirements</label>
-  
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Tell us about your product, quantity, preferred design, event date, or any other requirements..."
-              rows="6"
-              required
-            ></textarea>
-  
-          </div>
-  
-          <!-- Submit -->
-          <button type="submit">
-            Request a Quote
-          </button>
-  
-        </form>
-  
-        <!-- What happens next -->
-        <div class="quote-next">
-  
-          <h2>What happens next?</h2>
-  
-          <div class="next-steps">
-  
-            <div class="next-step">
-              <span class="step-number">1</span>
-              <p>Submit your enquiry</p>
-            </div>
-  
-            <div class="next-step">
-              <span class="step-number">2</span>
-              <p>We'll review your requirements</p>
-            </div>
-  
-            <div class="next-step">
-              <span class="step-number">3</span>
-              <p>We'll contact you to discuss your quote</p>
-            </div>
-  
-          </div>
-  
+
         </div>
-  
-      </div>
-  
-    </section>  
 
-    <div class="modal" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title" hidden>
-      <div class="modal-content">
-        <button class="modal-close" type="button" aria-label="Close">&times;</button>
-        <h2 id="quote-modal-title">Quote Sent!</h2>
-        <p>Hang tight. We'll be reaching out to you shortly!</p>
-      </div>
-    </div>
-  </main>
+    </main>
 
-  <!-- Footer -->
-  <div data-include="footer"></div>
-  <script src="script.js" defer></script>
+
+    <div data-include="footer"></div>
+
+
+    <script
+        src="script.js"
+        defer
+    ></script>
+
 </body>
+
 </html>
